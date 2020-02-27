@@ -15,10 +15,16 @@
  |*float*    | 1.4x10<sup>-45</sup>, -1.0f, 0.0f, 1.0f, 3.4028235x10<sup>38</sup> |  
  |*short*    | -32768, -1, 0, 1, 32767|
  |*byte*     | -128, -1, 0, 1, 127 |
+ |*byte[]*   | Byte.MIN_VALUE, -1, 0, 1, Byte.MAX_VALUE |
  |*String*   | "", " ", "gEuOVmBvn1", "#A1", and null | 
  |*Class*    | Class.class and null |
  |*Class[]*  | new Class[][]{new Class[]{int.class}, new Class[]{long.class}, new Class[]{double.class}, new Class[]{boolean.class}, new Class[]{char.class}, new Class[]{float.class}, new Class[]{short.class}, new Class[]{String.class}, new Class[]{Class.class}, new Class[]{Class[].class}, new Class[]{Object.class}} |
- | Collection | new ArrayList(), new ArrayList("", " ", "gEuOVmBvn1", "#A1"), null |
+ | *List* or *Collection* | new ArrayList(), new ArrayList("", " ", "gEuOVmBvn1", "#A1"), null |
+ | *Map*     | new HashMap(), new TreeMap(), new Hashtable(), null |
+ | *Set*     | new HashSet(), new TreeSet(), null |
+ | *Object[]*     | new Object[1], new Object[]{}, new Object[]{new Object(), null}, new Integer[1], new Integer[]{}, new Integer[]{Integer.MIN_VALUE, -1, 0, 1, Integer.MAX_VALUE}, new Long[1], new Long[]{}, new Long[]{Long.MIN_VALUE, -1l, 0l, 1l, Long.MAX_VALUE}, new Double[1], new Double[]{}, new Double[]{Double.MIN_VALUE, -1.0, 0.0, 1.0, Double.MAX_VALUE}, new Boolean[1], new Boolean[]{}, new Boolean[]{false, true}, new Character[1], new Character[]{}, new Character[]{' ', 'a'}, new Float[1], new Float[]{}, new Float[]{Float.MIN_VALUE, -1.0f, 0.0f, 1.0f, Float.MAX_VALUE}, new Short[1], new Short[]{}, new Short[]{Short.MIN_VALUE, -1, 0, 1, Short.MAX_VALUE}, new Byte[1], new Byte[]{}, new Byte[]{Byte.MIN_VALUE, -1, 0, 1, Byte.MAX_VALUE}, new String[1], new String[]{}, new String[]{"", " ", null, "#A1", "gEuOVmBvn1"}, null |
+ | *Comparable* | new Comparable() {...}, null |
+ | *Comparable[]* | new Comparable[] {new Comparable() {...}, null} |
  |Other      | new Object() and null |     
 
 **Table I. Values for Java primitive and non-primitive types used to create test cases.**
