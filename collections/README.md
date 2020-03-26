@@ -51,7 +51,7 @@
  |ArrayDeque 			| Specification | 9063252	| Open |
  |ArrayDeque 			| Eclipse OpenJ9| https://github.com/eclipse/openj9/issues/8221 | Rejected |
  |ArrayList.ensureCapacity 	| Specification | https://bugs.java.com/bugdatabase/view_bug.do?bug_id=JDK-8227674								|Rejected |
- |ArrayList.ensureCapacity	| Eclipse OpenJ9| https://github.com/eclipse/openj9/issues/6449 | Open |
+ |ArrayList.ensureCapacity	| Eclipse OpenJ9| https://github.com/eclipse/openj9/issues/6449 | Fixed |
  |ArrayList.remove 		| Specification | 9063256	| Open |
  |Arrays.copyOfRange 			| Eclipse OpenJ9| https://github.com/eclipse/openj9/issues/6682 | Open |
  |Arrays.copyOfRange		| Oracle	| https://bugs.java.com/bugdatabase/view_bug.do?bug_id=JDK-8229268	| Rejected |
